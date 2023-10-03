@@ -13,4 +13,14 @@ public class DemoController {
     public String renderDefaultRoute() {
         return defalutMapping;
     }
+
+    @GetMapping("/workout")
+    public String workout () {
+        return "Run a hard 5k";
+    }
+
+    @GetMapping("/fortune")
+    public String fortune() {
+        return "Today's your lucky day!";
+    }
 }
