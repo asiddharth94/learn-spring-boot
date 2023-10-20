@@ -12,8 +12,14 @@ public class SpringCoreController {
     private Coach myCoach;
 
 //    define a constructor for DI
+//    @Autowired
+//    public SpringCoreController(Coach coach) {
+//        myCoach = coach;
+//    }
+
+//    define a setter for DI
     @Autowired
-    public SpringCoreController(Coach coach) {
+    public void setCoach (Coach coach) {
         myCoach = coach;
     }
 
