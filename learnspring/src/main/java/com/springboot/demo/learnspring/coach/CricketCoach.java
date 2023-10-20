@@ -1,4 +1,4 @@
-package com.springboot.demo.learnspring;
+package com.springboot.demo.learnspring.coach;
 
 import org.springframework.stereotype.Component;
 

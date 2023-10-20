@@ -1,7 +1,8 @@
 package com.springboot.demo.learnspring.rest;
 
-import com.springboot.demo.learnspring.Coach;
+import com.springboot.demo.learnspring.coach.Coach;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,16 +13,16 @@ public class SpringCoreController {
     private Coach myCoach;
 
 //    define a constructor for DI
-//    @Autowired
-//    public SpringCoreController(Coach coach) {
-//        myCoach = coach;
-//    }
-
-//    define a setter for DI
     @Autowired
-    public void setCoach (Coach coach) {
+    public SpringCoreController(@Qualifier("cricketCoach") Coach coach) {
         myCoach = coach;
     }
+
+//    define a setter for DI
+//    @Autowired
+//    public void setCoach (@Qualifier("footballCoach") Coach coach) {
+//        myCoach = coach;
+//    }
 
     @GetMapping("/dailyworkout")
     public String getDailyWorkout() {
