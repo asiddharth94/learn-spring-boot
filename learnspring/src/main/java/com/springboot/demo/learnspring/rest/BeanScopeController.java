@@ -22,7 +22,7 @@ public class BeanScopeController {
 
     @GetMapping("/checkbeanscope")
     public String check() {
-//        return TRUE for Singleton, FALSE for prototype
+//        returns TRUE for Singleton, FALSE for prototype
         return "Bean Scope is " + (myCoach == myAnotherCoach);
     }
 }
