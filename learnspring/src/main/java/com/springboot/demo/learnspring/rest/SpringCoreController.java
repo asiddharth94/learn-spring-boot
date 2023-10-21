@@ -13,16 +13,21 @@ public class SpringCoreController {
     private Coach myCoach;
 
 //    define a constructor for DI
-    @Autowired
-    public SpringCoreController(@Qualifier("cricketCoach") Coach coach) {
-        myCoach = coach;
-    }
+//    @Autowired
+//    public SpringCoreController(@Qualifier("cricketCoach") Coach coach) {
+//        myCoach = coach;
+//    }
 
 //    define a setter for DI
 //    @Autowired
 //    public void setCoach (@Qualifier("footballCoach") Coach coach) {
 //        myCoach = coach;
 //    }
+
+//    constructor injection for @Bean demo
+public SpringCoreController(@Qualifier("swimCoach") Coach coach) {
+    myCoach = coach;
+}
 
     @GetMapping("/dailyworkout")
     public String getDailyWorkout() {
