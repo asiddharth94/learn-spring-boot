@@ -1,7 +1,7 @@
-package com.springboot.demo.learnspring.config;
+package com.springboot.demo.learnspring.springcore.config;
 
-import com.springboot.demo.learnspring.coach.Coach;
-import com.springboot.demo.learnspring.coach.SwimCoach;
+import com.springboot.demo.learnspring.springcore.coach.Coach;
+import com.springboot.demo.learnspring.springcore.coach.SwimCoach;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

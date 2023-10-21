@@ -1,7 +1,6 @@
-package com.springboot.demo.learnspring.rest;
+package com.springboot.demo.learnspring.springcore.rest;
 
-import com.springboot.demo.learnspring.coach.Coach;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.springboot.demo.learnspring.springcore.coach.Coach;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

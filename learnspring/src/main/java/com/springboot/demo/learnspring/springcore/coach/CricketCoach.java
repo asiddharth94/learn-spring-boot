@@ -1,4 +1,4 @@
-package com.springboot.demo.learnspring.coach;
+package com.springboot.demo.learnspring.springcore.coach;
 
 //import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 //import org.springframework.context.annotation.Scope;
